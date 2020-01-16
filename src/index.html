@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>webpack starterkit</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="" alt="">
+    </div>
+    <div class="header-nav">
+      <ul>
+        <li>Li 1</li>
+        <li>Li 2</li>
+        <li>Li 3</li>
+      </ul>
+    </div>
+    <div class="header-auth">
+      <ul>
+        <li>li 1</li>
+        <li>li 2</li>
+      </ul>
+    </div>
+    <div class="header-cart">
+      <div class="header-cart-count">0</div>
+    </div>
+  </header>
+  <section class="products-list">
+
+  </section>
+
+  <script id="product-tpl" type="x-tmpl-mustache">
+    <div class="product" data-id = "{{ id }}">
+      <div class="product-title">
+        {{ title }}
+      </div>
+      <div class="product-quantity">Кол-во: {{ quantity }} шт.</div>
+    </div>
+  </script>
+
+  <script id="person" type="x-tmpl-mustache">
+    <div class="person">
+        <div class="person-name">
+          {{ name }}
+        </div>
+        <div class="person-age">
+          {{ age }}
+        </div>
+        <div class="person-children">
+          {{ #children }}
+            <div class="person-child">
+              <div class="person-child-name">{{ name }}</div>
+              <div class="person-child-age">{{ age }}</div>
+            </div>
+          {{ /children }}
+        </div>
+        <div class="person-bla">
+          {{ #blabla }}
+              {{.}}
+          {{ /blabla }}
+        </div>
+    </div>
+  </script>
+</body>
+</html>
